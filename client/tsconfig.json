@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "*": [ "types/*" ],
+      "@/*": [ "./src/*" ],
+    },
+    "target": "es6",
+    "module": "es2020",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": [ "dom", "esnext", "es2020" ],
+    "noErrorTruncation": true
+  },
+  "include": [ "src/**/*" ],
+  "exclude": [ "node_modules" ]
+}
