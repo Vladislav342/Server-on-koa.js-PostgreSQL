@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable react/react-in-jsx-scope */
 import { Nav, RightNav, Ul, Li, Arrows, GlobalStyles, Form, Input, Button } from '../common/styled';
 import { useState, useEffect } from 'react';
 import { labels } from '../common/constants';

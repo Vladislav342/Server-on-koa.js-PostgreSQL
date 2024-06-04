@@ -1,5 +1,3 @@
-/* eslint-disable react/no-deprecated */
-/* eslint-disable react/react-in-jsx-scope */
 import { App } from './components/App/App';
 import { BrowserRouter } from 'react-router-dom';
 import { render } from 'react-dom';

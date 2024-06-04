@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { FC, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';

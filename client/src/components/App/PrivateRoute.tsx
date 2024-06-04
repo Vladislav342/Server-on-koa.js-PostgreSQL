@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Routes, Route, Outlet, useNavigate } from 'react-router-dom'; //useNavigate
 import { useEffect } from 'react';
 import { ERoutes } from '../../enums/routes';

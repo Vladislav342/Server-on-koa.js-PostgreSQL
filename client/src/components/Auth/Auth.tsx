@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Nav, RightNav, Ul, Li, Arrows, GlobalStyles, Form, Input, Button } from '../common/styled';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';

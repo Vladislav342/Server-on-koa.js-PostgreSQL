@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { labelsMainPage } from './constants';
 import { labels } from '../common/constants';
 import {

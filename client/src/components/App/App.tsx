@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { FC, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Auth } from '../Auth/Auth';
@@ -30,7 +29,6 @@ export const App: FC = () => {
       </Route>
       <Route path={ERoutes.LogIn} element={<Auth />} />
       <Route path={ERoutes.SignIn} element={<SignIn />} />
-      {/*<Route path={ERoutes.Account} element={<Account />} />*/}
     </Routes>
   );
 };
