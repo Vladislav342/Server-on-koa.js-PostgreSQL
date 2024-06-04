@@ -1,12 +1,9 @@
 require('dotenv').config();
 const Koa = require('koa');
 const app = new Koa();
-// const server = require('http').Server(app.callback());
 const server = require('http').createServer(app.callback());
-// const serve = require('koa-static');
 const { koaBody } = require('koa-body');
 const cors = require('@koa/cors');
-// var cookie = require('koa-cookie');
 const { default: cookie } = require('koa-cookie');
 const dbSetup = require('./db/db-setup');
 const session = require('koa-session');
@@ -45,9 +42,9 @@ app.use(router.allowedMethods());
 
 dbSetup();
 
-/*app.use(async (ctx, next) => {
+app.use(async (ctx, next) => {
     ctx.body = 'something went wrong ...';
-});*/
+});
 
 server.listen(PORT, '127.0.0.1', () => {
   console.log(`server is ready on ${PORT} port`);

@@ -4,12 +4,10 @@ const tokenService = require('./tokenService');
 
 class UserService {
   async registration(ctx) {
-    //let { login, password } = ctx.request.body;
     const { login, password } = ctx.query;
     const candidate = await UserRepository.findOne(login);
 
     if (candidate[0]) {
-      // throw new Error(`This user ${login} is already existed. Please, log in...`);
       return (ctx.body = JSON.stringify(
         {
           message: `This user ${login} is already existed. Please, log in...`,
@@ -43,17 +41,9 @@ class UserService {
   }
 
   async logIn(ctx) {
-    //const { login, password } = ctx.query;
     const { login, password } = ctx.request.body;
     const user = await UserRepository.findOne(login);
     if (!user.length) {
-      /*return (ctx.body = JSON.stringify(
-                {
-                    message: `This user ${login} was not found...`,
-                },
-                null,
-                2,
-            ));*/
       throw new Error(`This user ${login} was not found...`);
     }
 

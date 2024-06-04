@@ -68,7 +68,7 @@ class TokenService {
     }
 
     const userData = this.validateRefreshToken(refreshToken);
-    const token = await TokenRepository.findOneByToken(refreshToken); // token[0].id
+    const token = await TokenRepository.findOneByToken(refreshToken);
     if (!userData || !token) {
       return false; // UnauthorizedError
     }
